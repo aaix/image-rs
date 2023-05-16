@@ -693,6 +693,11 @@ where
         &self.data
     }
 
+    /// Returns the underlying raw buffer mutably
+    pub fn as_raw_mut(&mut self) -> &mut Container {
+        &mut self.data
+    }
+
     /// The width and height of this image.
     pub fn dimensions(&self) -> (u32, u32) {
         (self.width, self.height)
